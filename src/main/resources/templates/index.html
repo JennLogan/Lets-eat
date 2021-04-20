@@ -2,11 +2,44 @@
 <html xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Lets Eat!</title>
 </head>
 <body>
+<div class = "jumbotron text-center">
+    <h1>Lets Eat!</h1>
+    <p> Can't decide what to eat? Let us help!</p>
+    <p> Click <a th:href="@{/hello}">here</a> to log in. </p>
+</div>
 
-<h1>Lets Eat!</h1>
+
+<div class = "jumbotron text-center">
+    <h3>Pick A Protein</h3>
+</div>
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-primary">Beef</a>
+    <a href="#" class="btn btn-primary">Pork</a>
+    <a href="#" class="btn btn-primary">Chicken</a>
+    <a href="#" class="btn btn-primary">Fish</a>
+    <a href="#" class="btn btn-primary">Vegetables</a>
+</div>
+
+<div class = "jumbotron text-center">
+    <h3>Pick A Cuisine</h3>
+</div>
+
+<div class="btn-group btn-group-justified">
+    <a href="#" class="btn btn-primary">Asian</a>
+    <a href="#" class="btn btn-primary">Mexican</a>
+    <a href="#" class="btn btn-primary">Italian</a>
+    <a href="#" class="btn btn-primary">American</a>
+</div>
+
+
 
 </body>
 </html>
