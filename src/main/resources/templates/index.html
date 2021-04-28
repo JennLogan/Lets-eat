@@ -2,15 +2,11 @@
 <html xmlns:th="http://www.thymeleaf.org/">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>Lets Eat!</title>
 </head>
 <body>
 
-<form class = "form-register" method="post" name="login" onsubmit="return validate();">
+<form class = "form-register" method="post" action="/welcome" name="login" onsubmit="return validate();">
     <div class="register-with-email">
         <div class="form-white background">
             <div class= "form-title-row">
@@ -41,28 +37,6 @@
 
 
 
-<div class = "jumbotron text-center">
-    <h3>Quick Links to more recipe ideas!</h3>
-</div>
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-primary" onclick="window.location='https://www.foodnetwork.com';">FoodNetwork</a>
-    <a href="#" class="btn btn-primary" onclick="window.location='https://www.allrecipes.com';">AllRecipes</a>
-    <a href="#" class="btn btn-primary" onclick="window.location='https://www.food.com';">Food</a>
-    <a href="#" class="btn btn-primary" onclick="window.location='https://www.thekitchn.com/';">TheKitchn</a>
-    <a href="#" class="btn btn-primary" onclick="window.location='https://www.chowhound.com/';">Chow</a>
-</div>
-
-<div class = "jumbotron text-center">
-    <h3>Pick A Cuisine</h3>
-</div>
-
-<div class="btn-group btn-group-justified">
-    <a href="#" class="btn btn-primary">Asian</a>
-    <a href="#" class="btn btn-primary">Mexican</a>
-    <a href="#" class="btn btn-primary">Italian</a>
-    <a href="#" class="btn btn-primary">American</a>
-</div>
 
 
 

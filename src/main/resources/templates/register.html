@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+<form class="form-register" method="post" action="/register" onsubmit="return validate();">
+    <div class="form-with-email">
+        <div class="form-white-background">
+            <div class="form-title-row">
+                <h1>Register</h1>
+            </div>
+            </br>
+            <div class="form-row">
+                <label>
+                    <span>Full Name</span>
+                    <input type="text" name="text-name" id="name" placeholder="enter full name">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Email</span>
+                    <input type="text" name="text-email" id="email" placeholder="enter email address">
+                </label>
+            </div>
+            <div class="form-row">
+                <label>
+                    <span>Password</span>
+                    <input type="text" name="text-password" id="password" placeholder="enter password">
+                </label>
+            </div>
+            <input type="submit" name="btn_register" value="Register">
+        </div>
+        <a href="/" class="form-register"> Already have an account?<b>Login here</b></a>
+    </div>
+</form>
+</body>
+</html>

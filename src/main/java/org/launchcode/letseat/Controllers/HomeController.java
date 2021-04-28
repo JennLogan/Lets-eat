@@ -9,9 +9,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 
-    @RequestMapping (value= "/hello", method = RequestMethod.GET)
+    @RequestMapping (value= "", method = RequestMethod.GET)
     public String index () {
         return "index";
     }
+
+    @GetMapping ("/register")
+    public String registerForm(){ return "/register"; }
+
+     @RequestMapping  (value= "/welcome", method = RequestMethod.POST)
+     public String welcome(){ return "/welcome"; }
+
+     @GetMapping ("/logout")
+    public String logout(){ return "/logout"; }
 
 }
