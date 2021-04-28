@@ -9,11 +9,36 @@
     <title>Lets Eat!</title>
 </head>
 <body>
-<div class = "jumbotron text-center">
-    <h1>Lets Eat!</h1>
-    <p> Can't decide what to eat? Let us help!</p>
-    <p> Click <a th:href="@{/hello}">here</a> to log in. </p>
-</div>
+
+<form class = "form-register" method="post" name="login" onsubmit="return validate();">
+    <div class="register-with-email">
+        <div class="form-white background">
+            <div class= "form-title-row">
+                <h1>Login</h1>
+            </div>
+        </div>
+    </br>
+
+    <div class="form-row">
+        <label>
+            <span>Email</span>
+            <input type="text" name="txt_email" id="email" placeholder="enter email">
+        </label>
+    </div>
+
+        <div class="form-row">
+            <label>
+                <span>Password</span>
+                <input type="password" name="txt_password" id="password" placeholder="enter password">
+            </label>
+        </div>
+        <input type="submit" name="btn_login" value="Login">
+    </div>
+    <a href="register" class="form-login">You don't have an account? <b>Register here</b></a>
+    </div>
+
+</form>
+
 
 
 <div class = "jumbotron text-center">
