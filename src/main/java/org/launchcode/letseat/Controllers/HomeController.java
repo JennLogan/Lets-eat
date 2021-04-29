@@ -14,13 +14,15 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping ("/register")
+    @RequestMapping (value = "/register", method= {RequestMethod.POST, RequestMethod.GET})
     public String registerForm(){ return "/register"; }
 
      @RequestMapping  (value= "/welcome", method = RequestMethod.POST)
      public String welcome(){ return "/welcome"; }
 
      @GetMapping ("/logout")
-    public String logout(){ return "/logout"; }
+    public String logout(){ return "/logout";}
 
+    @GetMapping ("/index")
+    public String registerComplete(){ return "/index";}
 }
