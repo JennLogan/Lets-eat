@@ -6,6 +6,9 @@ plugins {
 
 group = 'org.launchcode'
 version = '0.0.1-SNAPSHOT'
+<<<<<<< HEAD
+sourceCompatibility = '15'
+=======
 sourceCompatibility = '13'
 
 configurations {
@@ -14,16 +17,23 @@ configurations {
 		extendsFrom developmentOnly
 	}
 }
+>>>>>>> b75c7adc24aada3dcdf7814da27e87b4618cc7c0
 
 repositories {
 	mavenCentral()
 }
 
 dependencies {
+<<<<<<< HEAD
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'mysql:mysql-connector-java'
+=======
 	//implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	//implementation 'mysql:mysql-connector-java'
 	implementation 'org.springframework.security:spring-security-crypto'
 	implementation 'org.springframework.boot:spring-boot-starter-validation'
+>>>>>>> b75c7adc24aada3dcdf7814da27e87b4618cc7c0
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
