@@ -1,32 +1,35 @@
 package org.launchcode.letseat.Models;
 
-public class User {
-    private int id;
-    private static int nextId =1;
+import com.sun.istack.NotNull;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-    private String name;
-    private String email;
-    private String password;
+import javax.persistence.Entity;
 
-    public User(int id, String name, String email, String password){
-        this.name = name;
-        this.email = email;
-        this.password = password;
-    }
+@Entity
+public class User extends AbstractEntity {
+
+    @NotNull
+    private String username;
+
+    @NotNull
+    private String pwHash;
 
     public User () {}
 
-    public String getName() {return name; }
+    private static final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
 
-    public void setName(String name) {this.name = name; }
+    public User(String username, String password){
+        this.username = username;
+        this.pwHash = encoder.encode(password);
+    }
 
-    public String getEmail() {return email; }
 
-    public void setEmail(String email) {this.email = email; }
 
-    public String getPassword() {return password; }
+    public String getUsername() {
+        return username;
+    }
 
-    public void setPassword(String password) {this.password = password; }
-
-    public int getId() {return id; }
+    public boolean isMatching(String password){
+        return encoder.matches(password,pwHash);
+    }
 }

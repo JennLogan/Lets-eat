@@ -5,35 +5,29 @@
     <title>Register</title>
 </head>
 <body>
-<form class="form-register" method="post" action="/register" onsubmit="return validate();">
-    <div class="form-with-email">
-        <div class="form-white-background">
-            <div class="form-title-row">
-                <h1>Register</h1>
-            </div>
-            </br>
-            <div class="form-row">
-                <label>
-                    <span>First Name</span>
-                    <input type="text" name="txt-name" id="name" placeholder="enter full name">
-                </label>
-            </div>
-            <div class="form-row">
-                <label>
-                    <span>Email</span>
-                    <input type="text" name="txt-email" id="email" placeholder="enter email address">
-                </label>
-            </div>
-            <div class="form-row">
-                <label>
-                    <span>Password</span>
-                    <input type="text" name="txt-password" id="password" placeholder="enter password">
-                </label>
-            </div>
-            <input type="submit" name="btn_register" value="Register">
-        </div>
-        <a href="index" class="form-register"> Already have an account?<b>Login here</b></a>
+
+<form method="post">
+    <div class="form-group">
+        <label>Username
+            <input class="form-control" th:field="${registerFormDTO.username}"/>
+        </label>
+        <p class="error" th:errors="${registerFormDTO.username}"></p>
     </div>
+
+    <div class="form-group">
+        <label>Password
+        <input class="form-control" th:field="${registerFormDTO.password}" type="password" />
+        </label>
+        <p class="error" th:errors="${registerFormDTO.password}" type="password}"/>
+    </div>
+
+    <div class="form-group">
+        <label>Verify Password
+        <input class="form-control" th:field="${registerFormDTO.verifyPassword}" type="password"} />
+        </label>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Register" />
 </form>
 </body>
 </html>
