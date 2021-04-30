@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Lets Eat!</title>
+</head>
+<body>
+
+<form class = "form-register" method="post" action="/welcome" name="login_form" onsubmit="return validate();">
+<h1>Login</h1>
+
+    </br>
+
+    <div class="form-row">
+        <label>
+            <span>Email</span>
+            <input type="text" name="txt_email" id="email" placeholder="enter email">
+        </label>
+    </div>
+    </br>
+
+        <div class="form-row">
+            <label>
+                <span>Password</span>
+                <input type="password" name="txt_password" id="password" placeholder="enter password">
+            </label>
+        </div>
+    </br>
+    <input type="submit" name="btn_login" value="Login">
+    </div>
+    <a href="register" class="form-login">You don't have an account? <b>Register here</b></a>
+    </div>
+
+</form>
+
+
+
+
+
+
+</body>
+</html>
