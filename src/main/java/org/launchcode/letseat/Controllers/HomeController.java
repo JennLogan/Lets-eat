@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 
     @RequestMapping ("")
-    public String start () { return "/login";
-    }
+    public String start () { return "/index"; }
 
 
 //    @RequestMapping (value = "/register", method= {RequestMethod.POST, RequestMethod.GET})
@@ -22,7 +21,5 @@ public class HomeController {
 //
 //     @GetMapping ("/logout")
 //    public String logout(){ return "/logout";}
-//
-    @GetMapping ("/index")
-    public String registerComplete(){ return "/welcome";}
+
 }
