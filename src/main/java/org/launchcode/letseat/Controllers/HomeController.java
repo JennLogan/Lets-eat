@@ -19,7 +19,7 @@ public class HomeController {
 //     @RequestMapping  (value= "/welcome", method = RequestMethod.POST)
 //     public String welcome(){ return "/welcome"; }
 //
-//     @GetMapping ("/logout")
-//    public String logout(){ return "/logout";}
+// @RequestMapping (value ="/logout")
+//    public String logout(){ return "login";}
 
 }
