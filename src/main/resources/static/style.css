@@ -14,3 +14,10 @@ div.container {
   text-align: center;
   padding: 10px 20px;
 }
+#searchBody {
+  background-image: url("https://th.bing.com/th/id/R5fd0ab08f54f7bc923083c5637a6c3b1?rik=cOSLrIZuHeUXaQ&pid=ImgRaw");
+}
+
+#searchPageTitle {
+    color: white;
+}

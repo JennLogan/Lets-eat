@@ -12,9 +12,8 @@ public class HomeController {
     @RequestMapping ("")
     public String start () { return "/index"; }
 
-
-//    @RequestMapping (value = "/register", method= {RequestMethod.POST, RequestMethod.GET})
-//    public String registerForm(){ return "/register"; }
+    @RequestMapping (value = "/search", method= {RequestMethod.POST, RequestMethod.GET})
+    public String registerForm(){ return "/search"; }
 //
 //     @RequestMapping  (value= "/welcome", method = RequestMethod.POST)
 //     public String welcome(){ return "/welcome"; }
