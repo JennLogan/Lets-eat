@@ -19,70 +19,79 @@ async function sendSearchRequest(){
 function searchRecipe(data){
     document.querySelector("#content").innerHTML = `
 
-    <div class="card-group">
-      <div class="card">
-        <img src="${data.hits[0].recipe.image}" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">${data.hits[0].recipe.label}</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="${data.hits[0].recipe.image}" class="card-img" alt="...">
         </div>
-        <div class="card-footer">
-          <small class="text-muted">${data.hits[0].recipe.source}</small>
-        </div>
-      </div>
-      <div class="card">
-        <img src="${data.hits[1].recipe.image}" class="card-img-top" alt="...">
-        <div class="card-body">
-        <h5 class="card-title">${data.hits[1].recipe.label}</h5>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">${data.hits[1].recipe.source}</small>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${data.hits[0].recipe.label}</h5>
+             <ul class="card-text">
+                <li>${data.hits[0].recipe.dishType}</li>
+                <li>${data.hits[0].recipe.mealType}</li>
+                <li>${data.hits[0].recipe.cuisineType}</li>
+             </ul>
+            <p class="card-text"><a href="#" class="btn btn-link" onclick="window.location='${data.hits[0].recipe.url}';">${data.hits[0].recipe.source}</a></p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <img src="${data.hits[2].recipe.image}" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">${data.hits[2].recipe.label}</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="${data.hits[1].recipe.image}" class="card-img" alt="...">
         </div>
-        <div class="card-footer">
-          <small class="text-muted">${data.hits[2].recipe.source}</small>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${data.hits[1].recipe.label}</h5>
+             <ul class="card-text">
+                <li>${data.hits[1].recipe.dishType}</li>
+                <li>${data.hits[1].recipe.mealType}</li>
+                <li>${data.hits[1].recipe.cuisineType}</li>
+             </ul>
+            <p class="card-text"><a href="#" class="btn btn-link" onclick="window.location='${data.hits[1].recipe.url}';">${data.hits[1].recipe.source}</a></p>
+          </div>
         </div>
       </div>
     </div>
 
-        <div class="card-group">
-          <div class="card">
-            <img src="${data.hits[3].recipe.image}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${data.hits[3].recipe.label}</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">${data.hits[3].recipe.source}</small>
-            </div>
-          </div>
-          <div class="card">
-            <img src="${data.hits[4].recipe.image}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${data.hits[4].recipe.label}</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">${data.hits[4].recipe.source}</small>
-            </div>
-          </div>
-          <div class="card">
-            <img src="${data.hits[5].recipe.image}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">${data.hits[5].recipe.label}</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">${data.hits[5].recipe.source}</small>
-            </div>
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="${data.hits[2].recipe.image}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${data.hits[2].recipe.label}</h5>
+             <ul class="card-text">
+                <li>${data.hits[2].recipe.dishType}</li>
+                <li>${data.hits[2].recipe.mealType}</li>
+                <li>${data.hits[2].recipe.cuisineType}</li>
+             </ul>
+            <p class="card-text"><a href="#" class="btn btn-link" onclick="window.location='${data.hits[2].recipe.url}';">${data.hits[2].recipe.source}</a></p>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src="${data.hits[3].recipe.image}" class="card-img" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${data.hits[3].recipe.label}</h5>
+             <ul class="card-text">
+                <li>${data.hits[3].recipe.dishType}</li>
+                <li>${data.hits[3].recipe.mealType}</li>
+                <li>${data.hits[3].recipe.cuisineType}</li>
+             </ul>
+            <p class="card-text"><a href="#" class="btn btn-link" onclick="window.location='${data.hits[3].recipe.url}';">${data.hits[3].recipe.source}</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
 `
 }
