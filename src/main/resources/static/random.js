@@ -26,7 +26,7 @@ function createMeal(meal){
             <ul>
                 ${ingredients.map(ingredient => `
                 <li>${ingredient}</li>
-                `)}
+                `).join('')}
             </ul>
         </div>
         <div class="column seven">
