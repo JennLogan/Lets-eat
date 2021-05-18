@@ -14,6 +14,9 @@ public class HomeController {
 
     @RequestMapping (value = "/search", method= {RequestMethod.POST, RequestMethod.GET})
     public String registerForm(){ return "/search"; }
+
+    @RequestMapping (value="/random", method={RequestMethod.POST, RequestMethod.GET})
+    public String randomMeal(){return "/random"; }
 //
 //     @RequestMapping  (value= "/welcome", method = RequestMethod.POST)
 //     public String welcome(){ return "/welcome"; }
