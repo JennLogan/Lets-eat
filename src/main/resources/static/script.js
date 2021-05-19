@@ -19,7 +19,7 @@ async function sendSearchRequest(){
 function searchRecipe(data){
     document.querySelector("#content").innerHTML = `
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 540px; background-color: grey; ">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img src="${data.hits[0].recipe.image}" class="card-img" alt="...">
@@ -37,7 +37,7 @@ function searchRecipe(data){
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 540px; background-color: grey;">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img src="${data.hits[1].recipe.image}" class="card-img" alt="...">
@@ -56,7 +56,7 @@ function searchRecipe(data){
       </div>
     </div>
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 540px; background-color: grey;">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img src="${data.hits[2].recipe.image}" class="card-img" alt="...">
@@ -75,7 +75,7 @@ function searchRecipe(data){
       </div>
     </div>
 
-    <div class="card mb-3" style="max-width: 540px;">
+    <div class="card mb-3" style="max-width: 540px; background-color: grey;">
       <div class="row no-gutters">
         <div class="col-md-4">
           <img src="${data.hits[3].recipe.image}" class="card-img" alt="...">

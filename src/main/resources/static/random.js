@@ -19,17 +19,20 @@ function createMeal(meal){
     }
 
     meal_container.innerHTML = `
-    <div class = "row">
-        <div class = "column five">
-            <img src="${meal.strMealThumb}" alt="Meal Image"/>
+        <div class = "row">
+            <div class ="column side" id="image">
+            <img src="${meal.strMealThumb}" alt="Meal Image" width = "400"/>
+            </div>
+
+            <div class = "column side" id ="ingredients">
             <h5>Ingredients</h5>
             <ul>
                 ${ingredients.map(ingredient => `
                 <li>${ingredient}</li>
                 `).join('')}
             </ul>
-        </div>
-        <div class="column seven">
+            </div>
+        <div class="column middle" id ="recipe">
         <h4>${meal.strMeal}</h4>
         <p>${meal.strInstructions}</p>
         </div>
